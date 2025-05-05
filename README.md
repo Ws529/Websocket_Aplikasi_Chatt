@@ -7,3 +7,12 @@
 
 # Membuat aplikasi chatt sederhana secara realtime
 Aplikasi chat real-time menggunakan Node.js, Express, dan WebSocket (ws) dengan fitur login, daftar pengguna online, dan pesan langsung antar pengguna.
+Setup di VSCode:
+- Buat folder baru misalnya realtime-chat-app, lalu buka dengan VSCode.
+Jalankan terminal dan ketik:
+npm init -y
+npm install express ws
+
+Jalankan server:
+node server.js
+Buka browser ke http://localhost:3000
