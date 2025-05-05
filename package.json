@@ -1,0 +1,15 @@
+{
+    "name": "realtime-chat-app",
+    "version": "1.0.0",
+    "description": "A simple real-time chat app using Node.js, Express, and WebSocket",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Wawan",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.21.2",
+        "ws": "^8.18.2"
+    }
+}
