@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Real-Time</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Masukkan nama pengguna">
+    <button onclick="login()">Masuk</button>
+  </div>
+
+  <div id="chat" class="hidden">
+    <div id="sidebar">
+      <h3>Pengguna Online</h3>
+      <ul id="users"></ul>
+    </div>
+
+    <div id="chat-area">
+      <!-- Header chat -->
+      <div id="chat-header">
+        <h3>Chat dengan <span id="chat-with">-</span></h3>
+      </div>
+
+      <!-- Gelembung pesan -->
+      <div id="messages"></div>
+
+      <!-- Input area -->
+      <div id="input-area">
+        <input type="text" id="message" placeholder="Ketik pesan...">
+        <button onclick="sendMessage()">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

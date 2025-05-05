@@ -1,0 +1,222 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Tampilan login */
+  #login {
+    margin-top: 100px;
+    padding: 30px 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  #login input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #login button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #login button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Layout chat utama */
+  #chat {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: 80vh;
+    margin-top: 30px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #sidebar {
+    width: 25%;
+    border-right: 1px solid #ddd;
+    background: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #sidebar h3 {
+    margin-top: 0;
+  }
+  
+  #users {
+    list-style: none;
+    padding-left: 10px;
+  }
+  
+  #users li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Area chat */
+  #chat-area {
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  #chat-area h3 {
+    margin-top: 0;
+  }
+  
+  #messages {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    background: #fefefe;
+    margin-bottom: 10px;
+  }
+  
+  #messages div {
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  #message {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+  }
+  
+  #chat-area input[type="text"] {
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  #chat-area button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #chat-area button:hover {
+    background-color: #27ae60;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    #chat {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    #sidebar, #chat-area {
+      width: 100%;
+    }
+  }
+  /* Tampilan header chat */
+#chat-header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Gelembung chat */
+  .message {
+    max-width: 70%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    position: relative;
+    word-wrap: break-word;
+    line-height: 1.4;
+  }
+  
+  .message.me {
+    align-self: flex-end;
+    background-color: #2e86de;
+    color: white;
+    border-bottom-right-radius: 0;
+  }
+  
+  .message.other {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #333;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Tempat pesan terstruktur */
+  #messages {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  /* Input dan tombol kirim di bar bawah */
+  #input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  #input-area input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  #input-area button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #input-area button:hover {
+    background-color: #27ae60;
+  }
+  
