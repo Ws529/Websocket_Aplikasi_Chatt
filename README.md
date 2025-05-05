@@ -1,1 +1,2 @@
-# Websocket_Aplikasi_Chatt
+# "Implementasi WebSocket untuk Komunikasi Real-Time: Studi Kasus Aplikasi Chat Sederhana"
+
